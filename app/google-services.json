@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "749798285448",
+    "firebase_url": "https://trabajoasierdavidad.firebaseio.com",
+    "project_id": "trabajoasierdavidad",
+    "storage_bucket": "trabajoasierdavidad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749798285448:android:8ca8c7c6890bb9d86abf3d",
+        "android_client_info": {
+          "package_name": "com.example.trabajoasierdavidad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749798285448-1of23i312kd71n7a8b5af0l7u2f1386m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trabajoasierdavidad",
+            "certificate_hash": "e8479686dc99abeed2e22e7e04c6800f94b25ca5"
+          }
+        },
+        {
+          "client_id": "749798285448-rjb0hek89sghgqeabii3t04ul58kls91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG7GUo0ofwNIFvJhoDEThaagzms20SBmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749798285448-rjb0hek89sghgqeabii3t04ul58kls91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
