@@ -1,7 +1,7 @@
 package com.example.trabajoasierdavidad;
 
 import java.util.ArrayList;
-
+//Aqui se encuentgra la clase alumnos con sus atributos
 public class Alumno {
     String DNI;
     String Nombre;

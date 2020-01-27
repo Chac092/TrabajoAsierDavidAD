@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+//Esta Clase es un adaptador para acomodar los datos del Recicler
 public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
     private View.OnClickListener onClickListener;
     private View.OnLongClickListener onLongClickListener;
@@ -23,7 +24,7 @@ public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
 
     }
 
-    //creamos nuestro ViewHolder
+    //creamos nuestro ViewHolder y le damos los elementos que contendra
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView nombre;
         public TextView Apellido;
@@ -37,8 +38,8 @@ public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
             Modulo = itemView.findViewById(R.id.editModulo);
         }
     }
-    //creamos el viewholder con la vista de un elemento sin personalizar
 
+    //creamos el viewholder con la vista de un elemento sin personalizar
     @Override
     public ViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, final int viewType) {
         //inflamos vista desde XML
@@ -47,7 +48,7 @@ public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
         v.setOnClickListener(onClickListener);
         return new ViewHolder(v);
     }
-
+    //Aqui le decimos que queremos que contengan los elementos del ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.DNI.setText(Alumno.getAlumnos().get(position).DNI);
@@ -55,12 +56,12 @@ public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
         holder.Apellido.setText(Alumno.getAlumnos().get(position).Apellido);
         holder.Modulo.setText(Alumno.getAlumnos().get(position).Modulo);
     }
-
+    //Aqui le indicamos los elementos que tendra el recycler
     @Override
     public int getItemCount() {
         return Alumno.getAlumnos().size();
     }
-
+    //Aqui le damos la posivilidad de que los elementos tengan Onclick listener
     public void setOnItemClickListener(View.OnClickListener onClickListener) {
         this.onClickListener = onClickListener;
     }

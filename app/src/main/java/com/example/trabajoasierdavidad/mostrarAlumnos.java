@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+//Esta Activity lo que hace es cargar un Recycler con los datos del arraylist que hemos llenado anteriormente
 public class mostrarAlumnos extends AppCompatActivity {
     Adaptador adap;
     private RecyclerView recyclerView;
@@ -16,8 +16,9 @@ public class mostrarAlumnos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_alumnos);
-
+        //Cargamos el Adaptador
         adap = new Adaptador ();
+        //Ponemos un ClickListener para cuando alguien pulse en un Alumno pueda ver su informacion en otra pantalla
         adap.setOnItemClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,9 +28,13 @@ public class mostrarAlumnos extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //Asignamos el recycler a su elemento
         recyclerView = findViewById(R.id.RecyclerView);
+        //Enlazamos el recycler con su adaptador
         recyclerView.setAdapter(adap);
+        //Le damos el formato deseado a nuestro Recycler en este caso un linear Layout
         layoutManager = new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL,false);
+        //Cargamos el Recycler
         recyclerView.setLayoutManager(layoutManager);
     }
 

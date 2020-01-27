@@ -60,49 +60,61 @@
 
     <TextView
         android:id="@+id/editDNI"
-        android:enabled="false"
-        android:layout_width="164dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="120sp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
         android:ems="10"
-       />
+        android:enabled="false" />
 
     <TextView
         android:id="@+id/editModulo"
-        android:layout_width="164dp"
-        android:enabled="false"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="34dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="183dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
-         />
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="120sp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:enabled="false" />
 
     <TextView
         android:id="@+id/editNombre"
-        android:layout_width="164dp"
-        android:enabled="false"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="4dp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="120sp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
         android:ems="10"
-         />
+        android:enabled="false" />
 
     <TextView
         android:id="@+id/editApellido"
-        android:enabled="false"
-        android:layout_width="164dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="2dp"
         android:ems="10"
-         />
+        android:textAlignment="center"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="120sp"
+        android:autoSizeTextType="uniform"
+        android:enabled="false" />
 </RelativeLayout>
