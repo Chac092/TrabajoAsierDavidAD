@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,10 +25,10 @@ public class Adaptador extends RecyclerView.Adapter <Adaptador.ViewHolder> {
 
     //creamos nuestro ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public EditText nombre;
-        public EditText Apellido;
-        public EditText DNI;
-        public EditText Modulo;
+        public TextView nombre;
+        public TextView Apellido;
+        public TextView DNI;
+        public TextView Modulo;
         public ViewHolder(View itemView) {
             super(itemView);
             nombre = itemView.findViewById(R.id.editNombre);

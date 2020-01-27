@@ -58,7 +58,7 @@
         android:text="Modulo"
         android:textSize="25sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editDNI"
         android:enabled="false"
         android:layout_width="164dp"
@@ -68,10 +68,9 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+       />
 
-    <EditText
+    <TextView
         android:id="@+id/editModulo"
         android:layout_width="164dp"
         android:enabled="false"
@@ -81,10 +80,9 @@
         android:layout_marginTop="183dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+         />
 
-    <EditText
+    <TextView
         android:id="@+id/editNombre"
         android:layout_width="164dp"
         android:enabled="false"
@@ -94,10 +92,9 @@
         android:layout_marginTop="78dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+         />
 
-    <EditText
+    <TextView
         android:id="@+id/editApellido"
         android:enabled="false"
         android:layout_width="164dp"
@@ -107,6 +104,5 @@
         android:layout_marginTop="130dp"
         android:layout_marginEnd="9dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+         />
 </RelativeLayout>
